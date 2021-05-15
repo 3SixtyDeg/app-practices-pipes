@@ -5,14 +5,54 @@
 <div class="p-grid">
     <div class="p-col p-md-6">
         <p-fieldset legend="I18nSelect Pipe" [toggleable]="true">
-            {{nombre}}... Una vez que bajes del vehículo, observarás varios comercios dentro de la estación de autobuses. No entres, venden muy caro. Sal de la estación, camina tres cuadras hacia el norte, doblas a la izquierda, camina otras tres cuadras y verás una tienda grande, llamada “El puerto del tiburón”. Ahí encontrarás lo que buscas. Y lo que no buscas también.
-            Por favor, ten mucho cuidado {{genero | i18nSelect: obj}}.
+            <p>
+                {{nombre}}... Una vez que bajes del vehículo, observarás varios comercios dentro de la estación de autobuses. No entres, venden muy caro. Sal de la estación, camina tres cuadras hacia el norte, doblas a la izquierda, camina otras tres cuadras y verás una tienda grande, llamada “El puerto del tiburón”. Ahí encontrarás lo que buscas. Y lo que no buscas también.
+                Por favor, ten mucho cuidado {{genero | i18nSelect: obj}}.
+            </p>
+           <button pButton type="button" 
+            label="Cambiar genero" class="p-button-info"
+            icon="pi pi-sort-alt" iconPos="left"
+            (click)="cambiarGenero()">
+           </button>
         </p-fieldset>
     </div>
     <div class="p-col p-md-6">
         <p-fieldset legend="I18nPlural Pipe" [toggleable]="true">
-            {{nombre}}... Una vez que bajes del vehículo, observarás varios comercios dentro de la estación de autobuses. No entres, venden muy caro. Sal de la estación, camina tres cuadras hacia el norte, doblas a la izquierda, camina otras tres cuadras y verás una tienda grande, llamada “El puerto del tiburón”. Ahí encontrarás lo que buscas. Y lo que no buscas también.
-            Por favor, ten mucho cuidado {{genero | i18nSelect: obj}}.
+            <p>
+                Una vez que bajes del vehículo, observarás {{negocios.length | i18nPlural: objNe}} dentro de la estación de autobuses. No entres, venden muy caro. Sal de la estación, camina tres cuadras hacia el norte, doblas a la izquierda, camina otras tres cuadras y verás una tienda grande, llamada “El puerto del tiburón”. Ahí encontrarás lo que buscas. Y lo que no buscas también.
+            </p>
+            <button pButton type="button" 
+            label="Eliminar comercio" class="p-button-info"
+            icon="pi pi-trash" iconPos="left"
+            (click)="eliminarComercio()">
+           </button>
+        </p-fieldset>
+    </div>
+    <div class="p-col p-md-6">
+        <p-fieldset legend="Slice Pipe" [toggleable]="true">
+            <b>Original</b>
+            <pre>{{negocios}}</pre>
+            <b>slice:0:2</b>
+            <pre>{{negocios | slice:0:2}}</pre>
+        </p-fieldset>
+    </div>
+    <div class="p-col p-md-6">
+        <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+           <ul>
+               <li *ngFor="let item of persona | keyvalue">
+                {{item.key}} - {{item.value}}
+               </li>
+           </ul>
+        </p-fieldset>
+    </div>
+    <div class="p-col p-md-6">
+        <p-fieldset legend="Json Pipe" [toggleable]="true">
+            {{heroes | json}}
+        </p-fieldset>
+    </div>
+    <div class="p-col p-md-6">
+        <p-fieldset legend="Async Pipe" [toggleable]="true">
+            <pre>{{miObservable | async}}</pre>
         </p-fieldset>
     </div>
 </div>
