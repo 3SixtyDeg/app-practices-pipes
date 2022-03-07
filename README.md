@@ -1,27 +1,143 @@
-# AppPracticesPipes
+<p align="center">
+ <img width="100px" src="./src/assets/img/logo.png" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">app-practices-pipes</h2>
+ <p align="center">Uso de pipes.</p>
+</p>
+  <p align="center">
+     <a href="https://github.com/magranadosb/app-practices-pipes/graphs/contributors">
+      <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/magranadosb/app-practices-pipes.svg?style=for-the-badge" />
+     </a>
+     <a href="https://github.com/magranadosb/app-practices-pipes/issues">
+      <img alt="GitHub issues" src="https://img.shields.io/github/issues/magranadosb/app-practices-pipes.svg?style=for-the-badge" />
+     </a>
+     <a href="https://github.com/magranadosb/app-practices-pipes/blob/main/LICENSE.md">
+      <img alt="GitHub license" src="https://img.shields.io/github/license/magranadosb/app-practices-pipes.svg?style=for-the-badge" />
+     </a>
+     <a href="https://github.com/magranadosb/app-practices-pipes/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/magranadosb/app-practices-pipes.svg?style=for-the-badge" />
+     </a>
+</p> 
+<p align="center">
+    <a href="https://magranadosb.github.io/app-practices-pipes/">Ver demo</a>
+</p>
+<br/>
+<br/>
+<br/>
+<br/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+## Tabla de contenidos
 
-## Development server
+<details open="open">
+  <summary>Menú</summary>
+  <ol>
+    <li><a href="#sobre-el-proyecto">🗂️ Sobre el proyecto</a></li>
+    <li><a href="#construido-con">🛠️ Construido con</a></li>
+    <li><a href="#temas-abordados">📚 Temas abordados</a></li>
+    <li>
+      <a href="#comenzando">🚀 Comenzando</a>
+      <ul>
+        <li><a href="#pre-requisitos">📋 Pre-requisitos</a></li>
+        <li><a href="#instalación">🔧 Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#despliegue">📦 Despliegue</a></li>
+    <li><a href="#versionado">📌 Versionado</a></li>
+    <li><a href="#contribuidores">✒️ Contribuidores</a></li>
+    <li><a href="#licencia">📄 Licencia</a></li>
+  </ol>
+</details>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Sobre el proyecto
 
-## Code scaffolding
+&nbsp;
+![](./src/assets/img/header.PNG)
+&nbsp;
+ >Uso de pipes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Construido con
 
-## Build
+* [Angular CLI v12.0.0](https://angular.io/)
+* [PrimeNG](https://www.primefaces.org/primeng/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Temas abordados
 
-## Running unit tests
+* Uppercase
+* Lowercase
+* TitleCase
+* Date
+* Decimal
+* Currency
+* Percent
+* i18nSelect
+* i18Plural
+* KeyValue
+* Json
+* Async
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Comenzando
 
-## Running end-to-end tests
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Pre-requisitos
 
-## Further help
+* [NodeJS](https://nodejs.org/en/)
+* [Git](https://git-scm.com)
+* [TypeScript](https://www.typescriptlang.org/download)
+  ```sh
+  npm install -g typescript
+  ```
+* [Angular CLI](https://angular.io/cli)
+  ```sh
+  npm install -g @angular/cli
+  ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Instalación
+
+_Clonar el repositorio._
+```sh
+git clone https://github.com/magranadosb/app-practices-pipes.git
+```
+
+_Instalar paquetes de NPM._
+
+```sh
+npm install
+```
+## Despliegue
+
+```sh
+ng serve -o
+```
+
+## Versionado
+
+Se usa [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/magranadosb/app-practices-pipes/tags).
+
+## Contribuidores
+&nbsp;
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/magranadosb">
+        <img src="https://avatars.githubusercontent.com/u/75822956" width="50px;" alt="magranadosb"/><br>
+        <sub>
+          <b>magranadosb</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+&nbsp;
+
+_También puedes mirar la lista de todos los [contribuyentes](https://github.com/magranadosb/app-practices-pipes/graphs/contributors) quíenes han participado en este proyecto._
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+## Información sobre mi cuenta de GitHub
+
+<br/>
+
+![magranadosb](https://github-readme-stats.vercel.app/api?username=magranadosb&show_icons=true&locale=es)
